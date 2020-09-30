@@ -1,9 +1,9 @@
-package shapes;
+package com.company.shapes;
 
 
-import java.awt.*;
+import com.company.base.Shape;
 
-public class Circle extends base.Shape {
+public class Circle extends Shape {
 
     private double r;
     private int xCenter, yCenter;
@@ -39,8 +39,10 @@ public class Circle extends base.Shape {
     }
 
     @Override
-    public String returnCenter() {
-        return "Center of the circle (x,y): "+getxCenter()+", "+getyCenter();
+    public double[] returnCenter() {
+        double x = getxCenter();
+        double y = getyCenter();
+        return new double[] {x,y};
     }
 
     @Override
@@ -53,7 +55,10 @@ public class Circle extends base.Shape {
         return false;
     }
 
-
+    @Override
+    public double calculateCircumference() {
+        return (2*Math.PI)*getR();
+    }
 
 
 }

@@ -1,6 +1,8 @@
-package shapes;
+package com.company.shapes;
 
-public class Rectangle extends base.Shape {
+import com.company.base.Shape;
+
+public class Rectangle extends Shape {
 
     private double x0,y0;
     private double height, width;
@@ -45,8 +47,10 @@ public class Rectangle extends base.Shape {
     }
 
     @Override
-    public String returnCenter() {
-        return "center (x,y): "+(getX0()+(getWidth()/2))+", "+(getY0()+(getHeight()/2));
+    public double[] returnCenter() {
+        double x = (getX0()+(getWidth()/2));
+        double y = (getY0()+(getHeight()/2));
+        return new double[] {x,y};
     }
 
     @Override
@@ -60,5 +64,14 @@ public class Rectangle extends base.Shape {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public double calculateCircumference() {
+        return 2*(getWidth()+getHeight());
+    }
+
+    public int test(){
+        return 1;
     }
 }
