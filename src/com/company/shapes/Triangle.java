@@ -86,7 +86,7 @@ public class Triangle extends Shape {
         return area(x1, y1, x2, y2, x3, y3);
     }
 
-    /* A utility function to calculate area of triangle
+    /* A utility method to calculate area of triangle
        formed by (x1, y1) (x2, y2) and (x3, y3) */
     public double area(double x1, double y1, double x2, double y2,
                        double x3, double y3)
