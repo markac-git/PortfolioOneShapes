@@ -14,37 +14,20 @@ public class Rectangle extends Shape {
         this.width = width;
     }
 
+    //getters
     public double getX0() {
         return x0;
     }
-
-    public void setX0(int x0) {
-        this.x0 = x0;
-    }
-
     public double getY0() {
         return y0;
     }
-
-    public void setY0(int y0) {
-        this.y0 = y0;
-    }
-
     public double getHeight() {
         return height;
     }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
     public double getWidth() {
         return width;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
 
     @Override
     public double[] returnCenter() {
@@ -71,7 +54,4 @@ public class Rectangle extends Shape {
         return 2*(getWidth()+getHeight());
     }
 
-    public int test(){
-        return 1;
-    }
 }

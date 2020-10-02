@@ -101,7 +101,7 @@ public class Triangle extends Shape {
         double PAC = area(getX1(), getY1(), xP, yP, getX3(), getY3());
         double PAB = area(getX1(), getY1(), getX2(), getY2(), xP, yP);
 
-        /* Check if sum of A1, A2 and A3 is same as A */
+        //Checking whether or not the sum of ABC is equal to PBC, PAC and PAB
         return (ABC == PBC + PAC + PAB);
     }
 
