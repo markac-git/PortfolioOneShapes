@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ShapeTest {
+    //Instantiating
     Rectangle rec = new Rectangle(0,0,10,10);
     Triangle tri = new Triangle(0,0,10,15,15,0);
     Circle cir = new Circle(10,5,5);

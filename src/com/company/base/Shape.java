@@ -3,7 +3,7 @@ package com.company.base;
 import java.util.Arrays;
 
 public abstract class Shape {
-    //creating constructor
+    //Constructor
     public double calculateDistance(Shape first, Shape second) {
         double x1 = first.returnCenter()[0];
         double y1 = first.returnCenter()[1];
@@ -13,7 +13,8 @@ public abstract class Shape {
         return dist;
     }
 
-    //creating abstract methods that contains no body
+    //creating abstract methods that contains no body.
+    //Sort of a promise that every subclass inherits following methods
     public abstract double[] returnCenter();
     public abstract double calculateArea();
     public abstract boolean pointInsideShape(double xP, double yP);
